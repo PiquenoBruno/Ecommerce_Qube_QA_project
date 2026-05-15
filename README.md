@@ -82,15 +82,39 @@ Testes automatizados implementados com:
 
 ## 📂 Estrutura do Projeto
 ```bash
-/ecommerce-qube
-│── /src
-│   ├── app.py
-│   ├── models/
-│   ├── routes/
-│   └── templates/
-│── /tests
-│   ├── test_auth.py
-│   ├── test_cart.py
-│   └── test_checkout.py
-│── requirements.txt
-│── README.md
+.
+├── static/
+│   ├── assets/        
+│   ├── script/        
+│   ├── styles/        
+│   └── uploads/       
+│
+├── templates/        
+│   ├── about.html
+│   ├── cadastro.html
+│   ├── cadastro_admin.html
+│   ├── carrinho.html
+│   ├── editar.html
+│   ├── editar_admin.html
+│   ├── lista.html
+│   ├── lista_admin.html
+│   ├── lista_usuarios.html
+│   ├── login.html
+│   ├── loja.html
+│   ├── menu_admin.html
+│   ├── novo.html
+│   ├── produtos_descricao.html
+│   └── tela_inicial.html
+│
+├── tests/             # Testes automatizados (pytest)
+│   ├── __init__.py
+│   └── test.py
+│
+├── config.py          # Configurações do projeto
+├── ecommerce.py       # Arquivo principal da aplicação Flask
+├── models.py          # Modelos do banco de dados
+├── views.py           # Rotas e lógica da aplicação
+├── uploads.py         # Lógica de upload de arquivos
+├── prepara_banco.py   # Script de inicialização do banco
+├── README.md
+└── extensoes_necessarias
