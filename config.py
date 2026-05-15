@@ -1,10 +1,14 @@
-SECRET_KEY = 'fecaf'
+import os
+from dotenv import load_dotenv
 
-SQLALCHEMY_DATABASE_URI = \
-    '{SGBD}://{usuario}:{senha}@{servidor}/{database}'.format(
-        SGBD = 'mysql+mysqlconnector',
-        usuario = 'root',
-        senha = '8642B.f.t13062005',
-        servidor = 'localhost',
-        database = 'ecommerce'
-    )
+load_dotenv()
+
+SECRET_KEY = os.getenv("SECRET_KEY")
+
+SQLALCHEMY_DATABASE_URI = (
+    f"{os.getenv('DB_SGBD')}://"
+    f"{os.getenv('DB_USER')}:"
+    f"{os.getenv('DB_PASSWORD')}@"
+    f"{os.getenv('DB_HOST')}/"
+    f"{os.getenv('DB_NAME')}"
+)
