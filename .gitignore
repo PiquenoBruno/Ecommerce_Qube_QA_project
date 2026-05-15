@@ -1,0 +1,74 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# distribuição
+build/
+dist/
+*.egg-info/
+
+# logs
+*.log
+
+# =========================
+# Flask / Django (geral)
+# =========================
+instance/
+.webassets-cache
+
+# =========================
+# Ambiente e configs locais
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Pytest
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# =========================
+# VSCode / IDEs
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Sistema operacional
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Uploads (IMPORTANTE no seu projeto)
+# =========================
+static/uploads/*
+!static/uploads/.gitkeep
+
+# =========================
+# Banco de dados local (se existir SQLite)
+# =========================
+*.sqlite3
+*.db
+
+# =========================
+# Cache geral
+# =========================
+.cache/
